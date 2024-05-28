@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- CSS -->
+    <style>
+        img{
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar1 {
+  display: flex;
+  background-color: black;
+  padding: 10px;
+}
+
+.navbar1 a, .drpbtn {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar1 a:hover, .drpbtn:hover {
+  background-color: crimson;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.drpcnt {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  min-width: 160px;
+}
+
+.drpcnt a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.drpcnt a:hover {
+  background-color: crimson;
+}
+
+.dropdown:hover .drpcnt {
+  display: block;
+}
+    </style>
+
+
+
+<!-- html -->
+    <div class="navbar1">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+        <div class="dropdown">
+            <button class="drpbtn">Variety of Recipe
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="drpcnt">
+                <a href="snacks.html">Snacks</a>
+                <a href="#">Desserts</a>
+                <a href="#">BreakFast</a>
+                <a href="#">Dinner</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="drpbtn">Regions 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="drpcnt">
+                <a href="europe.html">Europe</a>
+                <a href="africa.html">Africa</a>
+                <a href="america.html">America</a>
+                <a href="southasia.html">SouthAsia</a>
+            </div>
+        </div>
+    </div>
+    <img src="south_asia.gif" alt="SouthAsia">
+</body>
+</html>
